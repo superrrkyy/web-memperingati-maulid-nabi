@@ -31,7 +31,7 @@ Website peringatan **Maulid Nabi Muhammad SAW** yang berisi sejarah, makna, dali
 
 1. Clone repository ini:
    ```bash
-   git clone https://github.com/superrrkyy/maulid-nabi.git
+   git clone https://github.com/superrrkyy/web-memperingati-maulid-nabi.git
    ```
 2. Buka folder proyek
 3. Double-click file `index.html` atau buka dengan Live Server
