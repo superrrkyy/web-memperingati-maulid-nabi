@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maulid Nabi Muhammad SAW - Peringatan Kelahiran Rasulullah</title>
+  <meta name="description" content="Website resmi peringatan Maulid Nabi Muhammad SAW. Sejarah, makna, hikmah, dan tradisi perayaan Maulid di Indonesia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0d5c4d;
+      --primary-dark: #084038;
+      --primary-light: #1a7a68;
+      --gold: #c9a227;
+      --gold-light: #e8c547;
+      --cream: #f8f4eb;
+      --white: #ffffff;
+      --text: #1a1a1a;
+      --text-light: #555;
+      --shadow: 0 10px 40px rgba(13, 92, 77, 0.15);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* Arabic font for headings */
+    .arabic {
+      font-family: 'Amiri', serif;
+      direction: rtl;
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(13, 92, 77, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 1rem 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    }
+
+    nav.scrolled {
+      padding: 0.7rem 5%;
+      background: rgba(8, 64, 56, 0.98);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--white);
+    }
+
+    .logo-icon {
+      width: 45px;
+      height: 45px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      color: var(--primary-dark);
+      font-weight: 700;
+    }
+
+    .logo-text {
+      font-weight: 600;
+      font-size: 1.15rem;
+      letter-spacing: 0.5px;
+    }
+
+    .logo-text span {
+      color: var(--gold-light);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 0.95rem;
+      position: relative;
+      transition: color 0.3s;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--gold);
+      transition: width 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold-light);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+    }
+
+    .menu-toggle span {
+      width: 25px;
+      height: 3px;
+      background: var(--white);
+      border-radius: 2px;
+      transition: 0.3s;
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, var(--primary-light) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      padding: 100px 5% 60px;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(circle at 20% 80%, rgba(201, 162, 39, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(201, 162, 39, 0.1) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    /* Decorative Islamic pattern */
+    .hero-pattern {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0.06;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c9a227' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(201, 162, 39, 0.2);
+      border: 1px solid var(--gold);
+      color: var(--gold-light);
+      padding: 8px 24px;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      letter-spacing: 1px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      color: var(--white);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      line-height: 1.2;
+    }
+
+    .hero h1 .gold {
+      color: var(--gold-light);
+    }
+
+    .hero-arabic {
+      font-family: 'Amiri', serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      color: var(--gold-light);
+      margin: 1rem 0 1.5rem;
+      direction: rtl;
+    }
+
+    .hero p {
+      color: rgba(255,255,255,0.9);
+      font-size: 1.15rem;
+      max-width: 650px;
+      margin: 0 auto 2.5rem;
+      font-weight: 300;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-weight: 500;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      color: var(--primary-dark);
+      box-shadow: 0 4px 20px rgba(201, 162, 39, 0.4);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(201, 162, 39, 0.5);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid rgba(255,255,255,0.5);
+    }
+
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: var(--gold);
+      color: var(--gold-light);
+    }
+
+    /* Floating crescent decoration */
+    .crescent {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      box-shadow: 25px 0 0 0 var(--gold);
+      opacity: 0.15;
+      top: 15%;
+      right: 10%;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .crescent-2 {
+      width: 80px;
+      height: 80px;
+      box-shadow: 18px 0 0 0 var(--gold);
+      top: 60%;
+      left: 8%;
+      animation-delay: -3s;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-20px) rotate(5deg); }
+    }
+
+    /* Section Styles */
+    section {
+      padding: 80px 5%;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-badge {
+      display: inline-block;
+      background: rgba(13, 92, 77, 0.1);
+      color: var(--primary);
+      padding: 6px 18px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      letter-spacing: 1px;
+    }
+
+    .section-header h2 {
+      font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+      color: var(--primary-dark);
+      margin-bottom: 0.8rem;
+      font-weight: 700;
+    }
+
+    .section-header p {
+      color: var(--text-light);
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 1.05rem;
+    }
+
+    .divider {
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold), var(--gold-light));
+      margin: 1rem auto 0;
+      border-radius: 2px;
+    }
+
+    /* About Section */
+    .about {
+      background: var(--white);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .about-image {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      min-height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about-image-content {
+      text-align: center;
+      color: var(--white);
+      padding: 40px;
+    }
+
+    .about-image-content .big-arabic {
+      font-family: 'Amiri', serif;
+      font-size: 4rem;
+      color: var(--gold-light);
+      margin-bottom: 1rem;
+      direction: rtl;
+    }
+
+    .about-image-content h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .about-image-content p {
+      opacity: 0.9;
+      font-size: 0.95rem;
+    }
+
+    .about-content h3 {
+      color: var(--primary);
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .about-content p {
+      color: var(--text-light);
+      margin-bottom: 1.2rem;
+      font-size: 1.05rem;
+    }
+
+    .info-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-top: 1.5rem;
+    }
+
+    .info-card {
+      background: var(--cream);
+      padding: 18px;
+      border-radius: 12px;
+      border-left: 4px solid var(--gold);
+    }
+
+    .info-card strong {
+      display: block;
+      color: var(--primary-dark);
+      font-size: 0.9rem;
+      margin-bottom: 4px;
+    }
+
+    .info-card span {
+      color: var(--text-light);
+      font-size: 0.95rem;
+    }
+
+    /* History Section */
+    .history {
+      background: var(--cream);
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 30px;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: linear-gradient(to bottom, var(--primary), var(--gold));
+      border-radius: 2px;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-left: 80px;
+      margin-bottom: 40px;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: 18px;
+      top: 5px;
+      width: 28px;
+      height: 28px;
+      background: var(--gold);
+      border-radius: 50%;
+      border: 4px solid var(--cream);
+      box-shadow: 0 0 0 3px var(--primary);
+    }
+
+    .timeline-content {
+      background: var(--white);
+      padding: 25px 30px;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s;
+    }
+
+    .timeline-content:hover {
+      transform: translateX(8px);
+    }
+
+    .timeline-content .year {
+      color: var(--gold);
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-bottom: 6px;
+    }
+
+    .timeline-content h4 {
+      color: var(--primary-dark);
+      font-size: 1.15rem;
+      margin-bottom: 8px;
+    }
+
+    .timeline-content p {
+      color: var(--text-light);
+      font-size: 0.95rem;
+    }
+
+    /* Makna Section */
+    .makna {
+      background: var(--white);
+    }
+
+    .makna-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .makna-card {
+      background: var(--cream);
+      border-radius: 20px;
+      padding: 35px 28px;
+      text-align: center;
+      transition: all 0.3s ease;
+      border: 1px solid transparent;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .makna-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary), var(--gold));
+      transform: scaleX(0);
+      transition: transform 0.3s;
+    }
+
+    .makna-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow);
+      border-color: rgba(13, 92, 77, 0.1);
+    }
+
+    .makna-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .makna-icon {
+      width: 70px;
+      height: 70px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.2rem;
+      font-size: 1.8rem;
+      color: var(--gold-light);
+    }
+
+    .makna-card h3 {
+      color: var(--primary-dark);
+      font-size: 1.2rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .makna-card p {
+      color: var(--text-light);
+      font-size: 0.95rem;
+    }
+
+    /* Dalil Section */
+    .dalil {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: var(--white);
+    }
+
+    .dalil .section-header h2 {
+      color: var(--white);
+    }
+
+    .dalil .section-header p {
+      color: rgba(255,255,255,0.85);
+    }
+
+    .dalil .section-badge {
+      background: rgba(201, 162, 39, 0.2);
+      color: var(--gold-light);
+    }
+
+    .dalil-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 25px;
+    }
+
+    .dalil-card {
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 20px;
+      padding: 30px;
+      transition: all 0.3s;
+    }
+
+    .dalil-card:hover {
+      background: rgba(255,255,255,0.12);
+      transform: translateY(-5px);
+    }
+
+    .dalil-card .ayat {
+      font-family: 'Amiri', serif;
+      font-size: 1.4rem;
+      direction: rtl;
+      color: var(--gold-light);
+      margin-bottom: 1rem;
+      line-height: 1.8;
+    }
+
+    .dalil-card .latin {
+      font-style: italic;
+      color: rgba(255,255,255,0.7);
+      font-size: 0.9rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .dalil-card .arti {
+      color: rgba(255,255,255,0.9);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .dalil-card .sumber {
+      color: var(--gold);
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    /* Tradisi Section */
+    .tradisi {
+      background: var(--cream);
+    }
+
+    .tradisi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .tradisi-card {
+      background: var(--white);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s;
+    }
+
+    .tradisi-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .tradisi-header {
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      padding: 25px;
+      color: var(--white);
+      position: relative;
+    }
+
+    .tradisi-header .daerah {
+      font-size: 0.8rem;
+      color: var(--gold-light);
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+
+    .tradisi-header h3 {
+      font-size: 1.25rem;
+    }
+
+    .tradisi-body {
+      padding: 25px;
+    }
+
+    .tradisi-body p {
+      color: var(--text-light);
+      font-size: 0.95rem;
+    }
+
+    /* Hikmah Section */
+    .hikmah {
+      background: var(--white);
+    }
+
+    .hikmah-list {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .hikmah-item {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      padding: 25px;
+      background: var(--cream);
+      border-radius: 16px;
+      margin-bottom: 18px;
+      transition: all 0.3s;
+    }
+
+    .hikmah-item:hover {
+      box-shadow: var(--shadow);
+      transform: translateX(8px);
+    }
+
+    .hikmah-num {
+      min-width: 45px;
+      height: 45px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      color: var(--gold-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .hikmah-item h4 {
+      color: var(--primary-dark);
+      margin-bottom: 6px;
+      font-size: 1.1rem;
+    }
+
+    .hikmah-item p {
+      color: var(--text-light);
+      font-size: 0.95rem;
+    }
+
+    /* CTA Section */
+    .cta {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+      text-align: center;
+      padding: 80px 5%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta::before {
+      content: '';
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: rgba(201, 162, 39, 0.1);
+      top: -100px;
+      right: -100px;
+    }
+
+    .cta h2 {
+      color: var(--white);
+      font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+      margin-bottom: 1rem;
+    }
+
+    .cta p {
+      color: rgba(255,255,255,0.85);
+      max-width: 550px;
+      margin: 0 auto 2rem;
+      font-size: 1.1rem;
+    }
+
+    .cta .arabic-quote {
+      font-family: 'Amiri', serif;
+      font-size: 1.6rem;
+      color: var(--gold-light);
+      direction: rtl;
+      margin-bottom: 0.5rem;
+    }
+
+    .cta .quote-arti {
+      color: rgba(255,255,255,0.7);
+      font-style: italic;
+      font-size: 0.95rem;
+      margin-bottom: 2rem;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--primary-dark);
+      color: rgba(255,255,255,0.8);
+      padding: 50px 5% 30px;
+      text-align: center;
+    }
+
+    footer .footer-logo {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+
+    footer .footer-logo span {
+      color: var(--gold-light);
+    }
+
+    footer p {
+      font-size: 0.9rem;
+      max-width: 500px;
+      margin: 0 auto 1.5rem;
+    }
+
+    footer .copyright {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 20px;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-image {
+        min-height: 300px;
+      }
+
+      .info-cards {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--primary-dark);
+        flex-direction: column;
+        padding: 20px;
+        gap: 1rem;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+
+      .timeline::before {
+        left: 15px;
+      }
+
+      .timeline-item {
+        padding-left: 55px;
+      }
+
+      .timeline-dot {
+        left: 4px;
+        width: 24px;
+        height: 24px;
+      }
+
+      section {
+        padding: 60px 5%;
+      }
+    }
+
+    /* Scroll animations */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <a href="#beranda" class="logo">
+      <div class="logo-icon">☪</div>
+      <div class="logo-text">Maulid <span>Nabi</span></div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#sejarah">Sejarah</a></li>
+      <li><a href="#makna">Makna</a></li>
+      <li><a href="#dalil">Dalil</a></li>
+      <li><a href="#tradisi">Tradisi</a></li>
+      <li><a href="#hikmah">Hikmah</a></li>
+    </ul>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="beranda">
+    <div class="hero-pattern"></div>
+    <div class="crescent"></div>
+    <div class="crescent crescent-2"></div>
+    <div class="hero-content">
+      <div class="hero-badge">12 Rabiul Awal</div>
+      <h1>Maulid Nabi <span class="gold">Muhammad SAW</span></h1>
+      <div class="hero-arabic">مَوْلِدُ النَّبِيِّ مُحَمَّدٍ ﷺ</div>
+      <p>Peringatan kelahiran Rasulullah Muhammad SAW — rahmat bagi seluruh alam. Mari mengenang, meneladani, dan mencintai sang Nabi pembawa petunjuk.</p>
+      <div class="hero-buttons">
+        <a href="#tentang" class="btn btn-primary">Pelajari Lebih Lanjut</a>
+        <a href="#tradisi" class="btn btn-outline">Tradisi di Indonesia</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang -->
+  <section class="about" id="tentang">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-badge">PENGENALAN</div>
+        <h2>Apa Itu Maulid Nabi?</h2>
+        <div class="divider"></div>
+        <p>Mengenal lebih dekat peringatan kelahiran Rasulullah Muhammad SAW</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image fade-in">
+          <div class="about-image-content">
+            <div class="big-arabic">محمد</div>
+            <h3>Nabi Muhammad SAW</h3>
+            <p>Lahir di Makkah, Tahun Gajah<br>12 Rabiul Awal ± 570 M</p>
+          </div>
+        </div>
+        <div class="about-content fade-in">
+          <h3>Pengertian Maulid Nabi</h3>
+          <p>Kata <strong>"Maulid"</strong> berasal dari bahasa Arab yang berarti <em>hari kelahiran</em>. Maulid Nabi adalah peringatan kelahiran Nabi Muhammad SAW yang diperingati setiap tanggal <strong>12 Rabiul Awal</strong> dalam kalender Hijriah.</p>
+          <p>Bagi umat Islam, Maulid bukan sekadar perayaan, melainkan momentum untuk mengenang perjuangan, meneladani akhlak mulia, dan memperkokoh kecintaan kepada Rasulullah SAW — sang rahmat bagi seluruh alam.</p>
+          <div class="info-cards">
+            <div class="info-card">
+              <strong>Tanggal</strong>
+              <span>12 Rabiul Awal</span>
+            </div>
+            <div class="info-card">
+              <strong>Tempat Lahir</strong>
+              <span>Makkah Al-Mukarramah</span>
+            </div>
+            <div class="info-card">
+              <strong>Tahun</strong>
+              <span>± 570 M (Tahun Gajah)</span>
+            </div>
+            <div class="info-card">
+              <strong>Hari</strong>
+              <span>Senin</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sejarah -->
+  <section class="history" id="sejarah">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-badge">SEJARAH</div>
+        <h2>Sejarah Peringatan Maulid</h2>
+        <div class="divider"></div>
+        <p>Jejak sejarah perayaan Maulid Nabi dari masa ke masa</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="year">Abad ke-10 M</div>
+            <h4>Dinasti Fatimiyah (Mesir)</h4>
+            <p>Peringatan Maulid pertama kali dicatat secara resmi pada masa Dinasti Fatimiyah di Mesir. Mereka menggelar perayaan kelahiran Nabi beserta keluarga beliau sebagai bentuk penghormatan.</p>
+          </div>
+        </div>
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="year">Abad ke-12–13 M</div>
+            <h4>Sultan Muzhaffar al-Din (Irbil, Irak)</h4>
+            <p>Sultan Abu Said Muzhaffar Kukabri dari Irbil menyelenggarakan perayaan Maulid secara besar-besaran. Acara diisi dengan pengajian, sedekah, jamuan, dan dihadiri ulama serta masyarakat luas.</p>
+          </div>
+        </div>
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="year">Masa Shalahuddin Al-Ayyubi</div>
+            <h4>Penguatan Semangat Umat</h4>
+            <p>Peringatan Maulid juga dikaitkan dengan upaya Sultan Shalahuddin Al-Ayyubi untuk membangkitkan semangat umat Islam menghadapi ancaman dari luar, melalui kecintaan kepada Rasulullah SAW.</p>
+          </div>
+        </div>
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="year">Hingga Kini</div>
+            <h4>Tradisi Global & Lokal</h4>
+            <p>Maulid Nabi berkembang menjadi tradisi yang dirayakan di seluruh dunia Islam, termasuk Indonesia, dengan berbagai bentuk yang kaya budaya lokal namun tetap berintikan shalawat dan keteladanan Nabi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Makna -->
+  <section class="makna" id="makna">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-badge">MAKNA</div>
+        <h2>Makna & Tujuan Peringatan</h2>
+        <div class="divider"></div>
+        <p>Lebih dari sekadar seremoni — Maulid adalah ajakan untuk meneladani</p>
+      </div>
+
+      <div class="makna-grid">
+        <div class="makna-card fade-in">
+          <div class="makna-icon">♡</div>
+          <h3>Mengungkapkan Cinta</h3>
+          <p>Maulid menjadi wadah mengekspresikan kecintaan kepada Rasulullah SAW melalui shalawat, pujian, dan penghormatan yang tulus.</p>
+        </div>
+        <div class="makna-card fade-in">
+          <div class="makna-icon">✦</div>
+          <h3>Meneladani Akhlak</h3>
+          <p>Momentum untuk mengkaji sirah nabawiyah dan menerapkan sifat-sifat mulia Nabi: jujur, sabar, kasih sayang, dan adil.</p>
+        </div>
+        <div class="makna-card fade-in">
+          <div class="makna-icon">✧</div>
+          <h3>Bersyukur atas Rahmat</h3>
+          <p>Kelahiran Nabi adalah nikmat terbesar bagi umat manusia. Maulid mengajak kita bersyukur atas rahmat Allah yang agung ini.</p>
+        </div>
+        <div class="makna-card fade-in">
+          <div class="makna-icon">◈</div>
+          <h3>Memperkuat Iman</h3>
+          <p>Melalui pengajian dan dzikir, Maulid menjadi sarana memperkokoh keimanan dan kecintaan kepada Allah dan Rasul-Nya.</p>
+        </div>
+        <div class="makna-card fade-in">
+          <div class="makna-icon">◎</div>
+          <h3>Silaturahmi & Sedekah</h3>
+          <p>Tradisi Maulid sering diisi dengan berbagi makanan, sedekah, dan mempererat hubungan antarumat Islam.</p>
+        </div>
+        <div class="makna-card fade-in">
+          <div class="makna-icon">◉</div>
+          <h3>Edukasi Spiritual</h3>
+          <p>Peringatan ini menjadi ruang pembelajaran sejarah perjuangan Nabi dan nilai-nilai Islam yang relevan sepanjang masa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dalil -->
+  <section class="dalil" id="dalil">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-badge">DALIL</div>
+        <h2>Ayat & Hadits Terkait</h2>
+        <div class="divider"></div>
+        <p>Landasan dari Al-Qur'an dan Sunnah yang menguatkan makna Maulid</p>
+      </div>
+
+      <div class="dalil-cards">
+        <div class="dalil-card fade-in">
+          <div class="ayat">وَمَا أَرْسَلْنَاكَ إِلَّا رَحْمَةً لِّلْعَالَمِينَ</div>
+          <div class="latin">Wa mā arsalnāka illā raḥmatan lil-‘ālamīn</div>
+          <div class="arti">"Dan Kami tidak mengutus engkau (Muhammad) melainkan sebagai rahmat bagi seluruh alam."</div>
+          <div class="sumber">QS. Al-Anbiya' : 107</div>
+        </div>
+        <div class="dalil-card fade-in">
+          <div class="ayat">قُلْ بِفَضْلِ اللَّهِ وَبِرَحْمَتِهِ فَبِذَٰلِكَ فَلْيَفْرَحُوا</div>
+          <div class="latin">Qul bifaḍlillāhi wa biraḥmatihī fa biżālika falyafraḥū</div>
+          <div class="arti">"Katakanlah: Dengan karunia Allah dan rahmat-Nya, hendaklah dengan itu mereka bergembira."</div>
+          <div class="sumber">QS. Yunus : 58</div>
+        </div>
+        <div class="dalil-card fade-in">
+          <div class="ayat">إِنَّ اللَّهَ وَمَلَائِكَتَهُ يُصَلُّونَ عَلَى النَّبِيِّ</div>
+          <div class="latin">Innallāha wa malā'ikatahu yuṣallūna ‘alan-nabiyyi...</div>
+          <div class="arti">"Sesungguhnya Allah dan malaikat-malaikat-Nya bershalawat untuk Nabi. Wahai orang-orang yang beriman, bershalawatlah kamu untuk Nabi..."</div>
+          <div class="sumber">QS. Al-Ahzab : 56</div>
+        </div>
+        <div class="dalil-card fade-in">
+          <div class="ayat">ذَلِكَ يَوْمٌ وُلِدْتُ فِيهِ وَيَوْمٌ بُعِثْتُ</div>
+          <div class="latin">"Hari itu adalah hari aku dilahirkan dan hari aku diutus (sebagai Nabi)."</div>
+          <div class="arti">Rasulullah SAW menjelaskan alasan beliau berpuasa pada hari Senin — karena pada hari itu beliau dilahirkan dan diutus.</div>
+          <div class="sumber">HR. Muslim</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tradisi -->
+  <section class="tradisi" id="tradisi">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-badge">TRADISI INDONESIA</div>
+        <h2>Tradisi Maulid di Nusantara</h2>
+        <div class="divider"></div>
+        <p>Kekayaan budaya lokal dalam memperingati kelahiran Rasulullah SAW</p>
+      </div>
+
+      <div class="tradisi-grid">
+        <div class="tradisi-card fade-in">
+          <div class="tradisi-header">
+            <div class="daerah">YOGYAKARTA & SURAKARTA</div>
+            <h3>Grebeg Maulud</h3>
+          </div>
+          <div class="tradisi-body">
+            <p>Arak-arakan gunungan hasil bumi dari Keraton menuju Masjid Agung. Masyarakat berebut isi gunungan yang dipercaya membawa berkah. Tradisi ini menjadi simbol kemakmuran dan syukur.</p>
+          </div>
+        </div>
+        <div class="tradisi-card fade-in">
+          <div class="tradisi-header">
+            <div class="daerah">ACEH</div>
+            <h3>Kuah Beulangong</h3>
+          </div>
+          <div class="tradisi-body">
+            <p>Masyarakat bergotong-royong memasak kuah beulangong (kari daging khas) dalam kuali besar, lalu dibagikan kepada warga. Tradisi Meuripee ini mempererat silaturahmi dan rasa syukur.</p>
+          </div>
+        </div>
+        <div class="tradisi-card fade-in">
+          <div class="tradisi-header">
+            <div class="daerah">KALIMANTAN SELATAN</div>
+            <h3>Baayun Mulud</h3>
+          </div>
+          <div class="tradisi-body">
+            <p>Tradisi mengayun bayi sambil membaca syair Maulid. Melambangkan rasa syukur atas kelahiran Nabi sekaligus doa agar anak tumbuh sehat, saleh, dan penuh berkah.</p>
+          </div>
+        </div>
+        <div class="tradisi-card fade-in">
+          <div class="tradisi-header">
+            <div class="daerah">SUMATERA BARAT</div>
+            <h3>Bungo Lado</h3>
+          </div>
+          <div class="tradisi-body">
+            <p>Masyarakat Padang Pariaman membuat "pohon" yang dihias dengan uang kertas, lalu disumbangkan ke panti asuhan. Simbol kepedulian dan berbagi rezeki di hari yang berkah.</p>
+          </div>
+        </div>
+        <div class="tradisi-card fade-in">
+          <div class="tradisi-header">
+            <div class="daerah">MADURA</div>
+            <h3>Molodhan / Muluduan</h3>
+          </div>
+          <div class="tradisi-body">
+            <p>Penyajian buah-buahan yang ditusuk lidi membentuk tumpeng sebagai simbol syukur dan kebahagiaan. Sering dilengkapi dengan pembacaan shalawat dan pengajian.</p>
+          </div>
+        </div>
+        <div class="tradisi-card fade-in">
+          <div class="tradisi-header">
+            <div class="daerah">CIREBON</div>
+            <h3>Nyiram Gong & Panjang Jimat</h3>
+          </div>
+          <div class="tradisi-body">
+            <p>Pembersihan gamelan sekaten di Keraton Kanoman dan tradisi Panjang Jimat yang sarat makna spiritual, menjadi bagian rangkaian peringatan Maulid di Cirebon.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hikmah -->
+  <section class="hikmah" id="hikmah">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-badge">HIKMAH</div>
+        <h2>Hikmah Memperingati Maulid</h2>
+        <div class="divider"></div>
+        <p>Pelajaran berharga yang bisa kita petik dari peringatan ini</p>
+      </div>
+
+      <div class="hikmah-list">
+        <div class="hikmah-item fade-in">
+          <div class="hikmah-num">1</div>
+          <div>
+            <h4>Menumbuhkan Cinta kepada Rasulullah</h4>
+            <p>Cinta kepada Nabi adalah bagian dari iman. Maulid mengingatkan kita untuk menjadikan beliau lebih dicintai daripada diri sendiri, orang tua, dan seluruh manusia.</p>
+          </div>
+        </div>
+        <div class="hikmah-item fade-in">
+          <div class="hikmah-num">2</div>
+          <div>
+            <h4>Menghidupkan Sunnah dalam Kehidupan</h4>
+            <p>Dengan mengenal sirah Nabi, kita termotivasi untuk mengamalkan sunnah-sunnah beliau dalam ibadah, akhlak, dan interaksi sosial sehari-hari.</p>
+          </div>
+        </div>
+        <div class="hikmah-item fade-in">
+          <div class="hikmah-num">3</div>
+          <div>
+            <h4>Mempererat Ukhuwah Islamiyah</h4>
+            <p>Acara Maulid menjadi ajang bertemu, berbagi, dan saling menguatkan antarumat Islam lintas usia, daerah, dan latar belakang.</p>
+          </div>
+        </div>
+        <div class="hikmah-item fade-in">
+          <div class="hikmah-num">4</div>
+          <div>
+            <h4>Meningkatkan Amal Kebaikan</h4>
+            <p>Tradisi sedekah, berbagi makanan, dan kegiatan sosial saat Maulid mendorong umat untuk lebih dermawan dan peduli sesama.</p>
+          </div>
+        </div>
+        <div class="hikmah-item fade-in">
+          <div class="hikmah-num">5</div>
+          <div>
+            <h4>Refleksi Diri & Perbaikan</h4>
+            <p>Maulid menjadi momen introspeksi: sejauh mana kita meneladani Nabi? Apakah akhlak kita semakin dekat dengan akhlak beliau?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="arabic-quote">اَللّٰهُمَّ صَلِّ عَلٰى مُحَمَّدٍ وَّعَلٰى اٰلِ مُحَمَّدٍ</div>
+    <div class="quote-arti">Ya Allah, limpahkanlah shalawat dan salam kepada Nabi Muhammad dan keluarga beliau</div>
+    <h2>Mari Perbanyak Shalawat</h2>
+    <p>Setiap shalawat yang kita panjatkan kepada Rasulullah SAW akan dibalas dengan sepuluh kebaikan dari Allah SWT. Jadikan Maulid sebagai awal untuk lebih sering bershalawat.</p>
+    <a href="#beranda" class="btn btn-primary">Kembali ke Atas</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-logo">Maulid <span>Nabi Muhammad SAW</span></div>
+    <p>Website ini dibuat untuk mengenang kelahiran Rasulullah SAW dan menyebarkan kecintaan kepada beliau. Semoga bermanfaat dan membawa berkah.</p>
+    <div class="copyright">
+      © 2026 · Dibuat dengan penuh rasa cinta kepada Rasulullah ﷺ · Semoga bermanfaat
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Fade-in on scroll
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    fadeElements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
