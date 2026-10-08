@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#062e26"/><stop offset=".55" stop-color="#0f5c4c"/><stop offset="1" stop-color="#1a7a66"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" x2="1">
+      <stop offset="0" stop-color="#c9a227"/><stop offset=".5" stop-color="#fbe9a8"/><stop offset="1" stop-color="#e9c349"/>
+      <animate attributeName="x1" values="-1;1" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0;2" dur="5s" repeatCount="indefinite"/>
+    </linearGradient>
+    <radialGradient id="glow"><stop offset="0" stop-color="#e9c349" stop-opacity=".35"/><stop offset="1" stop-color="#e9c349" stop-opacity="0"/></radialGradient>
+    <pattern id="pat" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M30 6 L36 24 L54 30 L36 36 L30 54 L24 36 L6 30 L24 24Z" fill="none" stroke="#e9c349" stroke-opacity=".08"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="320" fill="url(#bg)"/>
+  <rect width="1200" height="320" fill="url(#pat)"/>
+  <circle cx="600" cy="150" r="240" fill="url(#glow)"><animate attributeName="r" values="210;260;210" dur="6s" repeatCount="indefinite"/></circle>
+
+  <!-- crescent + star -->
+  <g transform="translate(1060 22)">
+    <animateTransform attributeName="transform" type="translate" values="1060 22;1060 14;1060 22" dur="5s" repeatCount="indefinite"/>
+    <mask id="cm"><rect x="-10" y="-10" width="160" height="160" fill="#fff"/><circle cx="88" cy="44" r="46" fill="#000"/></mask><circle cx="60" cy="60" r="58" fill="#e9c349" opacity=".85" mask="url(#cm)"/>
+    <path d="M100 40 l5 12 13 1 -10 8 3 13 -11 -7 -11 7 3 -13 -10 -8 13 -1z" fill="#fbe9a8"><animate attributeName="opacity" values="1;.4;1" dur="2s" repeatCount="indefinite"/></path>
+  </g>
+
+  <!-- lanterns -->
+  <g fill="#e9c349">
+    <g><animateTransform attributeName="transform" type="rotate" values="-4 120 0;4 120 0;-4 120 0" dur="4s" repeatCount="indefinite"/>
+      <line x1="120" y1="0" x2="120" y2="70" stroke="#e9c349" stroke-width="2"/>
+      <path d="M100 70 h40 l8 20 v40 l-8 20 h-40 l-8 -20 v-40z" fill="#e9c349" fill-opacity=".25" stroke="#e9c349" stroke-width="3"/>
+      <circle cx="120" cy="110" r="10" fill="#fbe9a8"><animate attributeName="opacity" values="1;.5;1" dur="1.6s" repeatCount="indefinite"/></circle></g>
+    <g><animateTransform attributeName="transform" type="rotate" values="3 200 0;-3 200 0;3 200 0" dur="5s" repeatCount="indefinite"/>
+      <line x1="200" y1="0" x2="200" y2="40" stroke="#e9c349" stroke-width="2"/>
+      <path d="M186 40 h28 l6 14 v28 l-6 14 h-28 l-6 -14 v-28z" fill="#e9c349" fill-opacity=".25" stroke="#e9c349" stroke-width="2.5"/>
+      <circle cx="200" cy="68" r="7" fill="#fbe9a8"><animate attributeName="opacity" values=".5;1;.5" dur="1.9s" repeatCount="indefinite"/></circle></g>
+  </g>
+
+  <text x="600" y="95" text-anchor="middle" font-family="Amiri, 'Traditional Arabic', serif" font-size="40" fill="#e9c349">مَوْلِدُ النَّبِيِّ ﷺ</text>
+  <text x="600" y="185" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="56" font-weight="800" fill="#ffffff">Maulid Nabi <tspan fill="url(#gold)">Muhammad SAW</tspan></text>
+  <text x="600" y="230" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="20" fill="#d1fae5" letter-spacing="4">12 RABIUL AWAL • RAHMAT BAGI SELURUH ALAM</text>
+  <rect x="540" y="255" width="120" height="2" rx="1" fill="#e9c349"/>
+</svg>
