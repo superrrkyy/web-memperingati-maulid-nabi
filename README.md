@@ -1,81 +1,114 @@
-# 🌙 Website Maulid Nabi Muhammad SAW
+<p align="center">
+  <img src="./assets/banner.svg" width="100%" alt="Maulid Nabi Muhammad SAW" />
+</p>
 
-Website peringatan **Maulid Nabi Muhammad SAW** yang berisi sejarah, makna, dalil Al-Qur'an & Hadits, tradisi perayaan di Indonesia, serta hikmah memperingati kelahiran Rasulullah ﷺ.
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=16&duration=2800&pause=700&color=E9C349&center=true&vCenter=true&width=340&height=30&lines=Sejarah+%E2%80%A2+Makna+%E2%80%A2+Dalil;Tradisi+Maulid+di+Indonesia+%F0%9F%87%AE%F0%9F%87%A9;Hikmah+meneladani+Rasulullah+%EF%B7%BA" alt="typing" />
+</p>
 
-**Live Demo:** Buka file `index.html` di browser.
+<p align="center">
+  <a href="https://superrrkyy.github.io/web-memperingati-maulid-nabi/">
+    <img src="https://img.shields.io/badge/🌙_KUNJUNGI_WEBSITE-E9C349?style=for-the-badge&labelColor=0f5c4c" alt="Live Demo" />
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/Responsive-✓-0f5c4c?style=flat-square" />
+  <img src="https://img.shields.io/badge/GitHub_Pages-live-0f5c4c?style=flat-square&logo=github" />
+</p>
 
 ---
 
-## ✨ Fitur
+> Website peringatan **Maulid Nabi Muhammad SAW** yang berisi sejarah, makna, dalil Al-Qur'an & Hadits, tradisi perayaan di Indonesia, serta hikmah memperingati kelahiran Rasulullah ﷺ.
 
-- 🎨 Desain Islami (hijau & emas) yang elegan
-- 📱 Fully responsive (HP, tablet, desktop)
-- 📜 Sejarah peringatan Maulid dari masa ke masa
-- 📖 Ayat Al-Qur'an & Hadits terkait
-- 🇮🇩 Tradisi Maulid di berbagai daerah Indonesia
-- 💫 Animasi smooth saat scroll
-- 🧭 Navigasi sticky + menu mobile
+### 📸 Tampilan
+
+<p align="center">
+  <a href="https://superrrkyy.github.io/web-memperingati-maulid-nabi/">
+    <img src="./assets/screenshot.svg" width="100%" alt="Tampilan website Maulid Nabi" />
+  </a>
+  <br>
+  <sub><i>Halaman utama. Ketuk gambar untuk membuka website.</i></sub>
+</p>
 
 ---
 
-## 📂 Struktur File
+### ✨ Fitur
+
+- 🎨 **Desain Islami** bernuansa hijau & emas yang elegan
+- 🖋️ **Kaligrafi Arab** dengan font Amiri
+- 📱 **Responsif** di HP, tablet, dan desktop
+- 💫 **Animasi halus** saat scroll
+- 🧭 **Navigasi sticky** + menu mobile
+- ⚡ **Ringan**: cukup satu file HTML, tanpa instalasi
+
+---
+
+### 📖 Isi Website
+
+| | Bagian | Keterangan |
+|:-:|:--|:--|
+| 🏠 | **Beranda** | Hero dengan kaligrafi Arab |
+| 📘 | **Tentang** | Pengertian Maulid Nabi & info kelahiran |
+| 📜 | **Sejarah** | Timeline peringatan Maulid dari masa ke masa |
+| 💡 | **Makna** | 6 makna & tujuan memperingati Maulid |
+| 📖 | **Dalil** | Ayat Al-Qur'an & Hadits terkait |
+| 🇮🇩 | **Tradisi** | Grebeg Maulud, Baayun Mulud, Kuah Beulangong, dll. |
+| 🌟 | **Hikmah** | 5 hikmah memperingati Maulid |
+
+---
+
+### 🚀 Cara Menjalankan
+
+**Online:** langsung buka 👉 **[superrrkyy.github.io/web-memperingati-maulid-nabi](https://superrrkyy.github.io/web-memperingati-maulid-nabi/)**
+
+**Offline:**
+
+```bash
+git clone https://github.com/superrrkyy/web-memperingati-maulid-nabi.git
+cd web-memperingati-maulid-nabi
+```
+
+Lalu buka `index.html` di browser. Tidak perlu menginstal apa pun.
+
+<details>
+<summary><b>📂 Struktur file</b></summary>
+<br>
 
 ```
-├── index.html      # Halaman utama (semua konten + CSS + JS)
-└── README.md       # Dokumentasi proyek
+web-memperingati-maulid-nabi/
+├── index.html   # Seluruh konten + CSS + JavaScript
+├── assets/      # Banner & screenshot README
+└── README.md
 ```
 
----
-
-## 🚀 Cara Menjalankan
-
-1. Clone repository ini:
-   ```bash
-   git clone https://github.com/superrrkyy/web-memperingati-maulid-nabi.git
-   ```
-2. Buka folder proyek
-3. Double-click file `index.html` atau buka dengan Live Server
-
-Tidak perlu install apa-apa — website ini pure HTML, CSS, dan JavaScript.
+</details>
 
 ---
 
-## 📖 Isi Website
+### 🛠️ Teknologi
 
-| Section        | Keterangan                                      |
-|----------------|-------------------------------------------------|
-| Beranda        | Hero section dengan kaligrafi Arab              |
-| Tentang        | Pengertian Maulid Nabi & info kelahiran         |
-| Sejarah        | Timeline sejarah peringatan Maulid              |
-| Makna          | 6 makna & tujuan memperingati Maulid            |
-| Dalil          | Ayat Al-Qur'an & Hadits terkait                 |
-| Tradisi        | Grebeg Maulud, Baayun Mulud, Kuah Beulangong, dll |
-| Hikmah         | 5 hikmah memperingati Maulid                    |
+- **HTML5**: struktur halaman semantik
+- **CSS3**: Custom Properties, Flexbox, Grid, Animations
+- **JavaScript (Vanilla)**: menu mobile & animasi scroll
+- **Google Fonts**: [Poppins](https://fonts.google.com/specimen/Poppins) & [Amiri](https://fonts.google.com/specimen/Amiri)
 
 ---
 
-## 🛠️ Teknologi
+### 📝 Catatan
 
-- HTML5
-- CSS3 (Custom Properties, Flexbox, Grid, Animations)
-- JavaScript (Vanilla) — menu mobile & scroll animation
-- Google Fonts: [Poppins](https://fonts.google.com/specimen/Poppins) & [Amiri](https://fonts.google.com/specimen/Amiri)
+> [!NOTE]
+> Website ini dibuat untuk tujuan **edukasi** dan menyebarkan kecintaan kepada Rasulullah Muhammad SAW. Bebas digunakan untuk keperluan personal maupun edukasi. Silakan fork, modifikasi, dan sebarkan kebaikan. 🤍
 
 ---
 
-## 📝 Catatan
-
-Website ini dibuat untuk tujuan edukasi dan menyebarkan kecintaan kepada Rasulullah Muhammad SAW. Semoga bermanfaat dan membawa berkah.
-
----
-
-## 📄 Lisensi
-
-Proyek ini bebas digunakan untuk keperluan personal maupun edukasi.  
-Silakan fork, modifikasi, dan sebarkan kebaikan.
-
----
-
-**اَللّٰهُمَّ صَلِّ عَلٰى مُحَمَّدٍ وَّعَلٰى اٰلِ مُحَمَّدٍ**
-
-*Ya Allah, limpahkanlah shalawat dan salam kepada Nabi Muhammad dan keluarga beliau.*
+<p align="center">
+  <b>اَللّٰهُمَّ صَلِّ عَلٰى مُحَمَّدٍ وَّعَلٰى اٰلِ مُحَمَّدٍ</b>
+  <br>
+  <i>Ya Allah, limpahkanlah shalawat dan salam kepada Nabi Muhammad dan keluarga beliau.</i>
+  <br><br>
+  Dibuat dengan 💚 oleh <a href="https://github.com/superrrkyy"><b>AXRYZURE</b></a>
+</p>
